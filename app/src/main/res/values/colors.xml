@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_primary_green">#4caf50</color>
+    <color name="color_primary_dark_green">#43a047</color>
+    <color name="color_primary_light_green">#DCEDC8</color>
+    <color name="color_accent_red">#FF5252</color>
+    <color name="color_primary_red">#c62828</color>
+    <color name="color_primary_dark_red">#b71c1c</color>
+    <color name="color_blue">#FF03A9F4</color>
+    <color name="color_purple">#aa00ff</color>
+    <color name="color_yellow">#FFFFE100</color>
+    <color name="color_green">#FF00C853</color>
+    <color name="color_primary_text">#212121</color>
+    <color name="color_secondary_text">#757575</color>
+    <color name="color_black">#000</color>
+    <color name="color_white">#FFFF</color>
+    <color name="color_white_pale">#F5F5F5</color>
+    <color name="color_white_pale_2">#CECECE</color>
+    <color name="color_divider">#BDBDBD</color>
+
+    <array name="progressBarColors">
+        <item>@color/color_accent_red</item>
+        <item>@color/color_blue</item>
+        <item>@color/color_yellow</item>
+        <item>@color/color_green</item>
+    </array>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/optionOpenInBrowser"
+        android:icon="@drawable/ic_open_in_app"
+        android:title="Fungua Katika Browser"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/optionShareLink"
+        android:icon="@drawable/ic_share"
+        android:title="Sambaza..."
+        app:showAsAction="always" />
+
+    <!--<item-->
+    <!--android:id="@+id/option"-->
+    <!--android:icon="@drawable/ic_earth"-->
+    <!--android:title="Mitandao Ya Kijamii"-->
+    <!--app:showAsAction="never" />-->
+
+</menu>

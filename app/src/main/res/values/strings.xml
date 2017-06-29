@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Teknogia</string>
+    <string name="drawer_opened">Drawer opened</string>
+    <string name="drawer_closed">Drawer closed</string>
+    <string name="device_offline">Upo offline, tafadhali washa intaneti.</string>
+    <string name="sorry_failed_to_load">Samahani, imeshindwa kupakia.</string>
+    <string name="turn_on_internet">Washa Intaneti Na Ujaribu Tena</string>
+    <string name="swipe_down_to_refresh">Vuta Chini Kurefresh</string>
+    <string name="shared_image_dp">shared image dp</string>
+</resources>

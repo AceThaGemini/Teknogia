@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!--<set xmlns:android="http://schemas.android.com/apk/res/android">  -->
+
+<gridLayoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animation="@anim/anim_slide_in"
+    android:animationOrder="normal"
+    android:columnDelay="80%"
+    android:direction="top_to_bottom|left_to_right"
+    android:rowDelay="80%" />
+
+    <!--</set>-->

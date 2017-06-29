@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary_green</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark_green</item>
+        <item name="colorAccent">@color/color_accent_red</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:textColorSecondary">@color/color_white</item>
+    </style>
+
+    <!-- Splash application theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary_green</item>
+        <item name="colorPrimaryDark">@color/color_primary_green</item>
+        <item name="colorAccent">@color/color_accent_red</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="OutsideWebTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary_red</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark_red</item>
+        <item name="colorAccent">@color/color_blue</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+
+    <!-- ActionBar -->
+    <style name="ActionBarStyle">
+        <item name="android:titleTextStyle">@style/ActionBarTitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/ActionBarSubTitleTextStyle</item>
+    </style>
+
+    <!-- ActionBar Title-->
+    <style name="ActionBarTitleTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!-- ActionBar Subtitle -->
+    <style name="ActionBarSubTitleTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+
+    <!-- navigationDrawer items -->
+    <style name="NavDrawerItemTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- collapsingAppBar -->
+    <style name="ExpandedTitleTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/color_secondary_text</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- collapsingAppBar -->
+    <style name="CollapsedTitleTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

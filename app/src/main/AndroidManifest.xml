@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="creationsofali.teknogia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_teknogia"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_teknogia_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Main -->
+        <activity android:name=".activities.MainActivity" />
+        <!-- Splash -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Contact Us -->
+        <activity
+            android:name=".activities.ContactUsActivity"
+            android:label="Wasiliana Nasi" />
+        <!-- OutsideWeb -->
+        <activity
+            android:name=".activities.OutsideWebActivity"
+            android:theme="@style/OutsideWebTheme" />
+
+        <!-- MessagingService -->
+        <service android:name=".services.TeknogiaMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- InstanceIdService -->
+        <service android:name=".services.TeknogiaInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Metadata -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_teknogia" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/color_green" />
+
+        <activity android:name=".activities.ProfileActivity"></activity>
+    </application>
+
+</manifest>

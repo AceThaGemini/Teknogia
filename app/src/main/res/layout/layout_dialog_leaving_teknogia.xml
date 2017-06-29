@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <!--<creationsofali.teknogia.appfonts.DroidSansTextView-->
+    <!--android:id="@+id/textAppName"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="@color/color_primary_green"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingBottom="8dp"-->
+    <!--android:paddingTop="8dp"-->
+    <!--android:text="@string/app_name"-->
+    <!--android:textColor="#FFFF"-->
+    <!--android:textSize="15sp" />-->
+
+    <RelativeLayout
+        android:id="@+id/cardButtonUsingGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/color_primary_green"
+        android:clickable="false"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/iconWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_earth"
+            android:tint="@color/color_primary_light_green" />
+
+        <creationsofali.teknogia.appfonts.DroidSansTextView
+            android:id="@+id/textVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iconWeb"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@id/iconWeb"
+            android:text="You're leaving Teknogia"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp">
+
+        <creationsofali.teknogia.appfonts.DroidSansTextView
+            android:id="@+id/textRights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="The link is blah blah blah..."
+            android:textColor="@color/color_secondary_text"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/checkboxNeverAskAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:checked="false"
+            android:text="Usiulize Tena"
+            android:textColor="@color/selector_color_checkbox_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginStart="12dp"-->
+    <!--android:text="Credits:"-->
+    <!--android:textColor="@color/color_secondary_text"-->
+    <!--android:textSize="13sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginEnd="24dp"-->
+    <!--android:layout_marginStart="4dp"-->
+    <!--android:text="Suleiman, Ali"-->
+    <!--android:textColor="@color/color_grey_900"-->
+    <!--android:textSize="13sp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iconEmail"-->
+    <!--android:layout_width="24dp"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:background="@drawable/ripple_red"-->
+    <!--android:padding="2dp"-->
+    <!--android:src="@drawable/ic_email_variant"-->
+    <!--android:tint="@color/selector_color_red_white" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iconTwitter"-->
+    <!--android:layout_width="24dp"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:background="@drawable/ripple_blue"-->
+    <!--android:padding="2dp"-->
+    <!--android:src="@drawable/ic_twitter"-->
+    <!--android:tint="@color/selector_color_blue_white" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingEnd="14dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:visibility="invisible" />
+
+        <creationsofali.teknogia.appfonts.DroidSansTextView
+            android:id="@+id/textCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:text="Sitisha"
+            android:textAllCaps="true"
+            android:textColor="@color/selector_color_red_white"
+            android:textSize="14sp" />
+
+        <creationsofali.teknogia.appfonts.DroidSansTextView
+            android:id="@+id/textOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:text="Sawa"
+            android:textAllCaps="true"
+            android:textColor="@color/selector_color_green_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

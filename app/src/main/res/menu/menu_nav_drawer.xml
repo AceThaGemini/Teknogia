@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/navGroupMain"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navHome"
+            android:checked="true"
+            android:icon="@drawable/ic_home_variant"
+            android:title="Nyumbani" />
+
+        <item
+            android:id="@+id/navCamera"
+            android:icon="@drawable/ic_camera"
+            android:title="Kamera" />
+
+        <item
+            android:id="@+id/navComputer"
+            android:icon="@drawable/ic_laptop_mac"
+            android:title="Kompyuta" />
+
+        <item
+            android:id="@+id/navPhone"
+            android:icon="@drawable/ic_phone_iphone"
+            android:title="Simu" />
+
+        <item
+            android:id="@+id/navSocialNet"
+            android:icon="@drawable/ic_earth"
+            android:title="Mitandao Ya Kijamii" />
+
+        <item
+            android:id="@+id/navCulture"
+            android:icon="@drawable/ic_shield_half_full"
+            android:title="Utamaduni" />
+    </group>
+
+    <group
+        android:id="@+id/navGroupAbout"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navContactUs"
+            android:checkable="false"
+            android:icon="@drawable/ic_perm_phone_msg"
+            android:title="Wasiliana Nasi" />
+
+        <item
+            android:id="@+id/navAbout"
+            android:checkable="false"
+            android:icon="@drawable/ic_information_variant"
+            android:title="Kuhusu App" />
+    </group>
+</menu>
