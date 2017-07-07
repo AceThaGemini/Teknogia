@@ -76,6 +76,10 @@ public class OutsideWebActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setTitle(host);
             actionBar.setSubtitle(url);
+            if (url.contains("https"))
+                actionBar.setIcon(R.drawable.ic_lock);
+            else
+                actionBar.setIcon(R.drawable.ic_lock_open_outline);
         }
 
         webView.setWebViewClient(new WebViewClient() {
