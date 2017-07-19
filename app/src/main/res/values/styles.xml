@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -10,35 +10,38 @@
     </style>
 
     <!-- Splash application theme. -->
-    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/color_primary_green</item>
         <item name="colorPrimaryDark">@color/color_primary_green</item>
         <item name="colorAccent">@color/color_accent_red</item>
     </style>
 
-    <!-- Base application theme. -->
-    <style name="OutsideWebTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- OutsideWeb theme. -->
+    <style name="AppTheme.OutsideWeb" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/color_primary_red</item>
         <item name="colorPrimaryDark">@color/color_primary_dark_red</item>
         <item name="colorAccent">@color/color_blue</item>
         <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
     </style>
 
     <!-- ActionBar -->
-    <style name="ActionBarStyle">
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar">
         <item name="android:titleTextStyle">@style/ActionBarTitleTextStyle</item>
         <item name="android:subtitleTextStyle">@style/ActionBarSubTitleTextStyle</item>
+        <item name="titleTextStyle">@style/ActionBarTitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/ActionBarSubTitleTextStyle</item>
     </style>
 
     <!-- ActionBar Title-->
-    <style name="ActionBarTitleTextStyle">
+    <style name="ActionBarTitleTextStyle" parent="@android:style/TextAppearance">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/color_white</item>
     </style>
 
     <!-- ActionBar Subtitle -->
-    <style name="ActionBarSubTitleTextStyle">
-        <item name="android:textSize">12sp</item>
+    <style name="ActionBarSubTitleTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">10sp</item>
         <item name="android:textColor">@color/color_white</item>
         <item name="android:alpha">0.6</item>
     </style>

@@ -2,7 +2,6 @@ package creationsofali.teknogia.activities;
 
 import android.net.Uri;
 import android.os.Handler;
-import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -32,8 +31,7 @@ public class OutsideWebActivity extends AppCompatActivity {
     SmoothProgressBar progressBar;
     LinearLayout layoutInstruction;
     ImageView iconInstruction;
-    TextView textInstruction;
-    Snackbar snackbar;
+    TextView textInstruction, textToolbarTitle, textToolbarSubtitle;
 
     Animation animationShow, animationHide;
 
@@ -51,7 +49,8 @@ public class OutsideWebActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setHomeButtonEnabled(true);
-            //actionBar.setTitle("");
+            actionBar.setTitle("");
+            actionBar.setSubtitle("");
             actionBar.setHomeAsUpIndicator(R.drawable.ic_close);
         }
 
@@ -62,25 +61,35 @@ public class OutsideWebActivity extends AppCompatActivity {
         swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
         swipeRefreshLayout.setColorSchemeResources(R.color.color_blue);
         progressBar = (SmoothProgressBar) findViewById(R.id.progressBar);
+        textToolbarTitle = (TextView) findViewById(R.id.textToolbarTitle);
+        textToolbarSubtitle = (TextView) findViewById(R.id.textToolbarSubtitle);
 
         animationShow = AnimationUtils.loadAnimation(OutsideWebActivity.this, R.anim.anim_fab_show);
         animationHide = AnimationUtils.loadAnimation(OutsideWebActivity.this, R.anim.anim_fab_hide);
 
         String url = getIntent().getStringExtra("url");
         String host = Uri.parse(url).getHost();
-
         Log.d(TAG, "onCreate:host = " + host + ", url = " + url);
+
+        textToolbarTitle.setText(". . . .");
+        textToolbarSubtitle.setText("");
+
+        if (!host.contains("www."))
+            textToolbarSubtitle.append("www.");
+
+        // as the last part of the host
+        textToolbarSubtitle.append(host);
+
         // start loading
         loadUrlToWebView(url);
         // update toolbar
         if (actionBar != null) {
-            actionBar.setTitle(host);
-            actionBar.setSubtitle(url);
             if (url.contains("https"))
                 actionBar.setIcon(R.drawable.ic_lock);
             else
                 actionBar.setIcon(R.drawable.ic_lock_open_outline);
         }
+
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -88,12 +97,10 @@ public class OutsideWebActivity extends AppCompatActivity {
                 super.onPageFinished(view, url);
                 hideProgressBar();
 
+                textToolbarTitle.setText(view.getTitle());
+
                 if (swipeRefreshLayout.isRefreshing())
                     swipeRefreshLayout.setRefreshing(false);
-
-                if (actionBar != null) {
-                    actionBar.setSubtitle(view.getTitle());
-                }
             }
 
             @SuppressWarnings("deprecation")
