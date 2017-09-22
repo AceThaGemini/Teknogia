@@ -43,7 +43,7 @@
             android:id="@+id/navContactUs"
             android:checkable="false"
             android:icon="@drawable/ic_perm_phone_msg"
-            android:title="Wasiliana Nasi" />
+            android:title="Kutana na Clique" />
 
         <item
             android:id="@+id/navAbout"

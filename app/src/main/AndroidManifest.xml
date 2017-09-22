@@ -30,7 +30,7 @@
         <!-- Contact Us -->
         <activity
             android:name=".activities.ContactUsActivity"
-            android:label="Wasiliana Nasi" />
+            android:label="Kutana Na Clique" />
         <!-- OutsideWeb -->
         <activity
             android:name=".activities.OutsideWebActivity"
