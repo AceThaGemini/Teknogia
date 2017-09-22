@@ -56,7 +56,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_profile);
 
-        toolbar = (Toolbar) findViewById(R.id.mToolbar);
+        toolbar = findViewById(R.id.mToolbar);
         setSupportActionBar(toolbar);
 
         ActionBar actionBar = getSupportActionBar();
@@ -67,17 +67,17 @@ public class ProfileActivity extends AppCompatActivity {
 
         //  fab = (FloatingActionButton) findViewById(R.id.fab);
         //  collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbar);
-        imageDp = (ImageView) findViewById(R.id.imageDp);
+        imageDp = findViewById(R.id.imageDp);
         animationShow = AnimationUtils.loadAnimation(ProfileActivity.this, R.anim.anim_fab_show);
         // animationHide = AnimationUtils.loadAnimation(ProfileActivity.this, R.anim.anim_fab_hide);
 
-        layoutBio = (LinearLayout) findViewById(R.id.layoutBio);
-        textBio = (TextView) findViewById(R.id.textBio);
-        textTitle = (TextView) findViewById(R.id.textTitle);
-        iconEmail = (ImageView) findViewById(R.id.iconEmail);
-        iconPhone = (ImageView) findViewById(R.id.iconPhone);
-        iconTwitter = (ImageView) findViewById(R.id.iconTwitter);
-        iconInstagram = (ImageView) findViewById(R.id.iconInstagram);
+        layoutBio = findViewById(R.id.layoutBio);
+        textBio = findViewById(R.id.textBio);
+        textTitle = findViewById(R.id.textTitle);
+        iconEmail = findViewById(R.id.iconEmail);
+        iconPhone = findViewById(R.id.iconPhone);
+        iconTwitter = findViewById(R.id.iconTwitter);
+        iconInstagram = findViewById(R.id.iconInstagram);
 
         String gsonProfile = getIntent().getStringExtra("profile");
 
@@ -92,13 +92,13 @@ public class ProfileActivity extends AppCompatActivity {
 
         try {
             // if collapsingToolbar != null
-            collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbar);
+            collapsingToolbar = findViewById(R.id.collapsingToolbar);
             Typeface droidSansFont = Typeface.createFromAsset(getResources().getAssets(), "fonts/droid_sans-regular.ttf");
             collapsingToolbar.setExpandedTitleTypeface(droidSansFont);
             collapsingToolbar.setCollapsedTitleTypeface(droidSansFont);
 
             collapsingToolbar.setTitle(muhuni.getName());
-            textShortDesc = (TextView) findViewById(R.id.textShortDesc);
+            textShortDesc = findViewById(R.id.textShortDesc);
             textShortDesc.setText(muhuni.getShortDesc());
             Log.d(TAG, "Short desc set to collapsingToolbar");
 

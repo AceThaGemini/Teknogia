@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = (Toolbar) findViewById(R.id.mToolbar);
+        toolbar = findViewById(R.id.mToolbar);
         setSupportActionBar(toolbar);
 
         ActionBar actionBar = getSupportActionBar();
@@ -85,16 +85,16 @@ public class MainActivity extends AppCompatActivity {
             actionBar.setTitle(getString(R.string.app_name));
         }
 
-        webView = (WebView) findViewById(R.id.webView);
-        layoutInstruction = (LinearLayout) findViewById(R.id.layoutInstruction);
+        webView = findViewById(R.id.webView);
+        layoutInstruction = findViewById(R.id.layoutInstruction);
         layoutInstruction.setVisibility(View.GONE);
-        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-        navigationDrawer = (NavigationView) findViewById(R.id.navigationDrawer);
-        progressBar = (SmoothProgressBar) findViewById(R.id.progressBar);
+        swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
+        drawerLayout = findViewById(R.id.drawerLayout);
+        navigationDrawer = findViewById(R.id.navigationDrawer);
+        progressBar = findViewById(R.id.progressBar);
         progressBar.setInterpolator(new DecelerateInterpolator(1f));
-        textInstruction = (TextView) findViewById(R.id.textInstruction);
-        iconInstruction = (ImageView) findViewById(R.id.iconInstruction);
+        textInstruction = findViewById(R.id.textInstruction);
+        iconInstruction = findViewById(R.id.iconInstruction);
         // fabRefresh = (FloatingActionButton) findViewById(R.id.fabRefresh);
         // fabRefresh.hide();
         // fabRefresh.setEnabled(false);
@@ -379,10 +379,10 @@ public class MainActivity extends AppCompatActivity {
         final AlertDialog dialog = dialogBuilder.create();
         dialog.show();
 
-        TextView textVersion = (TextView) dialogView.findViewById(R.id.textVersion);
+        TextView textVersion = dialogView.findViewById(R.id.textVersion);
         textVersion.setText(PackageInfoHelper.getVersionName(MainActivity.this));
 
-        TextView textRights = (TextView) dialogView.findViewById(R.id.textRights);
+        TextView textRights = dialogView.findViewById(R.id.textRights);
         String unicodeCopyRight = "\u00A9"; // or (char) 169 = 10101001 = 0x00A9
         String unicodeTradeMark = "\u2122"; // or (char) 8482 = 0x2122
         // (c) 2017 TINTech Apps tm x Teknogia tm
@@ -515,7 +515,7 @@ public class MainActivity extends AppCompatActivity {
                 getString(R.string.app_name), Context.MODE_PRIVATE).edit();
 
 
-        final CheckBox checkboxNeverAskAgain = (CheckBox) dialogView.findViewById(R.id.checkboxNeverAskAgain);
+        final CheckBox checkboxNeverAskAgain = dialogView.findViewById(R.id.checkboxNeverAskAgain);
 
         dialogView.findViewById(R.id.textCancel).setOnClickListener(new View.OnClickListener() {
             @Override

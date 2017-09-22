@@ -55,13 +55,13 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
         ViewHolder(View itemView) {
             super(itemView);
 
-            imageDp = (ImageView) itemView.findViewById(R.id.imageDp);
-            iconEmail = (ImageView) itemView.findViewById(R.id.iconEmail);
-            iconPhone = (ImageView) itemView.findViewById(R.id.iconPhone);
-            iconTwitter = (ImageView) itemView.findViewById(R.id.iconTwitter);
-            iconInstagram = (ImageView) itemView.findViewById(R.id.iconInstagram);
-            textName = (TextView) itemView.findViewById(R.id.textName);
-            textWhoIsHe = (TextView) itemView.findViewById(R.id.textWhoIsHe);
+            imageDp = itemView.findViewById(R.id.imageDp);
+            iconEmail = itemView.findViewById(R.id.iconEmail);
+            iconPhone = itemView.findViewById(R.id.iconPhone);
+            iconTwitter = itemView.findViewById(R.id.iconTwitter);
+            iconInstagram = itemView.findViewById(R.id.iconInstagram);
+            textName = itemView.findViewById(R.id.textName);
+            textWhoIsHe = itemView.findViewById(R.id.textWhoIsHe);
 
             itemView.findViewById(R.id.layoutDp).setOnClickListener(new View.OnClickListener() {
                 @Override

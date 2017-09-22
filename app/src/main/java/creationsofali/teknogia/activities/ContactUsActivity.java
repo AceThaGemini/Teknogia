@@ -44,7 +44,7 @@ public class ContactUsActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_contact_us);
 
-        toolbar = (Toolbar) findViewById(R.id.mToolbar);
+        toolbar = findViewById(R.id.mToolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle(R.string.app_name);
 
@@ -54,7 +54,7 @@ public class ContactUsActivity extends AppCompatActivity {
             actionBar.setHomeButtonEnabled(true);
         }
 
-        recyclerView = (GridRecyclerView) findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView);
         // layout manager
         gridLayoutManager = new GridLayoutManager(ContactUsActivity.this, 2);
         recyclerView.setLayoutManager(gridLayoutManager);

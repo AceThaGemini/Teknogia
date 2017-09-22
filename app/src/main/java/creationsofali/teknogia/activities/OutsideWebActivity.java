@@ -42,7 +42,7 @@ public class OutsideWebActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_outside_web);
 
-        toolbar = (Toolbar) findViewById(R.id.mToolbar);
+        toolbar = findViewById(R.id.mToolbar);
         setSupportActionBar(toolbar);
 
         final ActionBar actionBar = getSupportActionBar();
@@ -55,14 +55,14 @@ public class OutsideWebActivity extends AppCompatActivity {
         }
 
 
-        webView = (WebView) findViewById(R.id.webView);
-        layoutInstruction = (LinearLayout) findViewById(R.id.layoutInstruction);
+        webView = findViewById(R.id.webView);
+        layoutInstruction = findViewById(R.id.layoutInstruction);
         layoutInstruction.setVisibility(View.GONE);
-        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
+        swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
         swipeRefreshLayout.setColorSchemeResources(R.color.color_blue);
-        progressBar = (SmoothProgressBar) findViewById(R.id.progressBar);
-        textToolbarTitle = (TextView) findViewById(R.id.textToolbarTitle);
-        textToolbarSubtitle = (TextView) findViewById(R.id.textToolbarSubtitle);
+        progressBar = findViewById(R.id.progressBar);
+        textToolbarTitle = findViewById(R.id.textToolbarTitle);
+        textToolbarSubtitle = findViewById(R.id.textToolbarSubtitle);
 
         animationShow = AnimationUtils.loadAnimation(OutsideWebActivity.this, R.anim.anim_fab_show);
         animationHide = AnimationUtils.loadAnimation(OutsideWebActivity.this, R.anim.anim_fab_hide);
